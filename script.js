@@ -54,7 +54,7 @@ let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
+    const currentScroll = window.scrollY;
     
     // Add shadow when scrolled
     if (currentScroll > 0) {
@@ -100,7 +100,7 @@ window.addEventListener('scroll', () => {
         const sectionTop = section.offsetTop - navbarHeight - 100;
         const sectionHeight = section.offsetHeight;
         
-        if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
             current = section.getAttribute('id');
         }
     });
@@ -116,13 +116,13 @@ window.addEventListener('scroll', () => {
 // Add typing effect to hero title (optional enhancement)
 const heroTitle = document.querySelector('.hero-title');
 if (heroTitle) {
-    const text = heroTitle.innerHTML;
-    heroTitle.innerHTML = '';
+    const text = heroTitle.textContent;
+    heroTitle.textContent = '';
     let i = 0;
     
     function typeWriter() {
         if (i < text.length) {
-            heroTitle.innerHTML += text.charAt(i);
+            heroTitle.textContent += text.charAt(i);
             i++;
             setTimeout(typeWriter, 50);
         }
