@@ -1,168 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professional portfolio website showcasing projects and skills">
-    <title>Portfolio</title>
+    <title>Tim N.</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">Portfolio</div>
+    <header>
+        <div class="left-header">
+            <div class="logo"><a href="index.html">Tim N</a></div>
+        </div>
+        <div class="right-header">
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">About me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
-    </nav>
+    </header>
 
-    <section id="home" class="hero">
-        <div class="container">
+    <div class="gradient">
+
+        <div class="hero">
             <div class="hero-content">
-                <h1 class="hero-title">Hello, I'm <span class="highlight">Your Name</span></h1>
-                <p class="hero-subtitle">Web Developer & Designer</p>
-                <p class="hero-description">Creating beautiful, functional websites and applications</p>
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <div class="hero-text">
+                    <div class="hero-header">Web Developer & Designer</div>
+                    <div class="hero-sub">Freelancer, creating beautiful, modern websites</div>
+                </div>
+                <a href="#contact" class="btn hero-contact-button">Contact</a>
+                <a href="#projects" class="btn-ghost hero-contact-button">My Work</a>
+
+
             </div>
         </div>
-    </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I'm a passionate developer with expertise in creating modern web applications. I love turning ideas into reality through clean, efficient code.</p>
-                    <p>With a focus on user experience and attention to detail, I strive to build applications that are not only functional but also beautiful and intuitive.</p>
-                </div>
+        <div class="about-section" id="about">
+            <div class="marquee">
+                <p>+++ Open for Work +++ Frontend Developer +++ Based in Germany +++ Creative Coding</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- <div class="projects-section" id="projects">
+        <div class="slider-wrapper">
+            <div class="card" id="card-1">
+                <h3>FitMitTim</h3>
+                <img src="./images/fitmittim_thumbnail.png" alt="">
+                <p>Example Landing Page</p>
+                <a href="#card-2" class="arrow-next">→</a>
+            </div>
+            <div class="card" id="card-2">
+                <a href="#card-1" class="arrow-prev">←</a>
+                <h3>Projekt 2</h3>
+                <img src="./images/fitmittim_thumbnail.png" alt="">
+                <p>Example Landing Page</p>
+                <a href="#card-3" class="arrow-next">→</a>
+            </div>
+            <div class="card" id="card-3">
+                <a href="#card-2" class="arrow-prev">←</a>
+                <h3>Projekt 3</h3>
+                <img src="./images/fitmittim_thumbnail.png" alt="">
+                <p>Example Landing Page</p>
+                <a href="#card-1" class="arrow-next">→</a>
             </div>
         </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">📱</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Project One</h3>
-                        <p>A modern web application built with cutting-edge technologies</p>
-                        <div class="project-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">💻</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Project Two</h3>
-                        <p>Responsive design focused on user experience and accessibility</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">🎨</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Project Three</h3>
-                        <p>Creative solution with beautiful UI and smooth animations</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Firebase</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML5 & CSS3</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>React / Vue / Angular</li>
-                        <li>Responsive Design</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Python</li>
-                        <li>RESTful APIs</li>
-                        <li>Database Design</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <ul>
-                        <li>Git & GitHub</li>
-                        <li>VS Code</li>
-                        <li>Figma</li>
-                        <li>Agile/Scrum</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p class="contact-description">Have a project in mind? Let's work together!</p>
-                <div class="contact-links">
-                    <a href="mailto:your.email@example.com" class="contact-link">
-                        <span class="icon">✉️</span>
-                        <span>Email</span>
-                    </a>
-                    <a href="https://github.com/yourusername" target="_blank" class="contact-link">
-                        <span class="icon">💻</span>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="contact-link">
-                        <span class="icon">💼</span>
-                        <span>LinkedIn</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Portfolio. All rights reserved.</p>
-        </div>
-    </footer>
+    </div> -->
 
     <script src="script.js"></script>
 </body>
+
 </html>
