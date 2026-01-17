@@ -29,7 +29,7 @@ p {
   --text-color: #334155;
   --text-light: #64748b;
   --bg-color: #ffffff;
-  --bg-light: #e3e8ec;
+  --bg-light: #e6eaee;
   --border-color: #e2e8f0;
   --shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
@@ -39,7 +39,7 @@ p {
 
 header {
   position: fixed;
-  background-color: #e3e3e3;
+  background-color: white;
   top: 0;
   width: 100%;
 
