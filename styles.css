@@ -113,6 +113,7 @@ a {
   background: transparent;
   border: 2px solid white;
   color: white;
+  font-weight: 500;
   padding: 12px 32px;
   text-decoration: none;
   border-radius: 8px;
@@ -121,7 +122,7 @@ a {
 
 .btn-ghost:hover {
   background: white;
-  color: #3b4cc0; /* Deine Header-Farbe */
+  color: var(--primary-color);
 }
 
 .hero-header {
