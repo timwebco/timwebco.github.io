@@ -16,17 +16,19 @@
 
 <body>
     <header>
-        <div class="left-header">
-            <div class="logo"><a href="index.html">Tim N</a></div>
-        </div>
-        <div class="right-header">
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <div class="container">
+            <div class="left-header">
+                <div class="logo"><a href="index.html">Tim N</a></div>
+            </div>
+            <div class="right-header">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <!--<li><a href="#about">About me</a></li> -->
+                    <li><a href="#projects">Projects</a></li>
+                    <!--<li><a href="#skills">Skills</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -78,7 +80,54 @@
         </div>
     </div> -->
 
-    <script src="script.js"></script>
+    <div class="projects-section" id="projects">
+        <div class="projects-container">
+            <div class="projects-header">Projects</div>
+            <div class="cards-wrapper">
+                <div class="card">
+                    <img src="images/fitmittim_thumbnail.png" alt="">
+                    <div class="card-text">
+                        <h2>Project One</h2>
+                        <p>Subtext subtext subtext subtext subtext subtext</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/fitmittim_thumbnail.png" alt="">
+                    <div class="card-text">
+                        <h2>Project One</h2>
+                        <p>Subtext subtext subtext subtext subtext subtext</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/fitmittim_thumbnail.png" alt="">
+                    <div class="card-text">
+                        <h2>Project One</h2>
+                        <p>Subtext subtext subtext subtext subtext subtext</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section" id="contact">
+            <div class="contact-container">
+                <div class="contact-header">Get in touch</div>
+                <div class="contact-subtext">Have a project in mind? Contact me!</div>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <a target="_blank" rel="noopener" href="https://github.com/timwebco"></a>
+                        <div class="contact-card-icon"><img src="images/fiverr-icon.png" alt=""></div>
+                        <div class="contact-card-text">Fiverr</div>
+                    </div>
+                    <div class="contact-card">
+                        <a target="_blank" rel="noopener" href="https://www.fiverr.com/timwebco"></a>
+                        <div class="contact-card-icon github"><img src="images/github.png" alt=""></div>
+                        <div class="contact-card-text">Github</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
